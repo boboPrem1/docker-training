@@ -6,6 +6,8 @@ from sqlmodel import Field, Session, SQLModel, create_engine, select
 
 from config import settings
 
+# A little change
+
 
 class Hero(SQLModel, table=True):
     id: int | None = Field(default=None, primary_key=True)
@@ -32,7 +34,7 @@ app = FastAPI(lifespan=lifespan)
 
 @app.get("/")
 def hello() -> str:
-    return "Hello, Docker!!!"
+    return "Bonjour Juvanio !!!"
 
 
 @app.post("/heroes/")
