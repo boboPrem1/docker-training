@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: fastapi-service
-          image: boboprem1/docker-test
+          image: boboprem1/docker-training
           imagePullPolicy: Always
           env:
             - name: POSTGRES_PASSWORD
